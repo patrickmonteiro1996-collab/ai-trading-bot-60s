@@ -1,47 +1,42 @@
-<!doctype html>
-<html lang="pt">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#101827"><meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="Simulador experimental de sinais cripto de 60 segundos. Sem dinheiro real.">
-  <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="stylesheet" href="styles.css"><title>AI Trading Bot 60s</title>
-</head>
-<body>
-<header><div><div class="eyebrow">SIMULADOR · PAPER TRADING</div><h1>AI Trading Bot <span>60s</span></h1></div><div class="pill">DEMO</div></header>
-<main>
-<section class="balance card"><div class="muted">Saldo virtual</div><div class="money" id="balance">100,00 CHF</div><div class="muted small">Capital de teste · não é dinheiro real</div></section>
-<section class="stats">
-  <div class="stat card"><div class="muted">Operações</div><b id="trades">0</b></div>
-  <div class="stat card"><div class="muted">Taxa de acerto</div><b id="winrate">—</b></div>
-  <div class="stat card"><div class="muted">Vitórias</div><b class="green" id="wins">0</b></div>
-  <div class="stat card"><div class="muted">Derrotas</div><b class="red" id="losses">0</b></div>
-</section>
-<section class="card">
-  <div class="section-head"><h2>Mercados</h2><span class="muted small" id="feedStatus">A ligar…</span></div>
-  <div class="coins" id="coins">
-    <div class="coin"><b>BTC/USDT</b><strong>—</strong><small>À espera de dados</small></div>
-    <div class="coin"><b>ETH/USDT</b><strong>—</strong><small>À espera de dados</small></div>
-    <div class="coin"><b>SOL/USDT</b><strong>—</strong><small>À espera de dados</small></div>
-    <div class="coin"><b>XRP/USDT</b><strong>—</strong><small>À espera de dados</small></div>
-  </div>
-</section>
-<section class="card">
-  <div class="section-head"><h2>Sinal experimental</h2><span class="pill subdued">60 segundos</span></div>
-  <label for="asset">Ativo</label><select id="asset"><option>BTCUSDT</option><option>ETHUSDT</option><option>SOLUSDT</option><option>XRPUSDT</option></select>
-  <div class="signal" id="signal"><div class="muted">Ainda sem análise</div><strong>—</strong><small>Os sinais só aparecem quando há dados suficientes.</small></div>
-  <div class="row"><div><div class="muted small">Confiança indicativa</div><b id="confidence">—</b></div><div class="right"><div class="muted small">Preço atual</div><b id="selectedPrice">—</b></div></div>
-  <p class="note">O sinal é produzido por regras técnicas simples (momentum, EMA e RSI). Não é uma IA treinada nem uma previsão garantida.</p>
-  <button id="startBtn" disabled>Iniciar simulação de 2 CHF</button>
-  <div class="timer muted" id="timer">A aguardar sinal…</div>
-</section>
-<section class="card">
-  <div class="section-head"><h2>Histórico</h2><button class="textbtn" id="resetBtn">Reiniciar</button></div>
-  <div id="history" class="history"><div class="muted">Ainda não existem operações.</div></div>
-</section>
-<section class="disclaimer">Simulação apenas. Sem depósitos, levantamentos, corretora ou execução de ordens. Os dados públicos podem atrasar ou falhar. O desempenho passado da simulação não prevê resultados futuros.</section>
-</main>
-<footer>AI Trading Bot 60s · versão experimental</footer>
-<script src="app.js"></script>
-</body></html>
+SIMULADOR · PAPER TRADING
+AI Trading Bot 60s
+
+DEMO
+Saldo virtual
+100,00 CHF
+Capital de teste · não é dinheiro real
+Operações
+0
+Taxa de acerto
+—
+Vitórias
+0
+Derrotas
+0
+Mercados
+
+A ligar…
+BTC/USDT—À espera de dados
+ETH/USDT—À espera de dados
+SOL/USDT—À espera de dados
+XRP/USDT—À espera de dados
+Sinal experimental
+
+60 segundos
+Seleção de ativo
+Ainda sem análise
+—Os sinais só aparecem quando há dados suficientes.
+Confiança indicativa
+—
+Preço atual
+—
+O sinal é produzido por regras técnicas simples (momentum, EMA e RSI). Não é uma IA treinada nem uma previsão garantida.
+
+Iniciar simulação de 2 CHF
+A aguardar sinal…
+Histórico
+
+Reiniciar
+Ainda não existem operações.
+Simulação apenas. Sem depósitos, levantamentos, corretora ou execução de ordens. Os dados públicos podem atrasar ou falhar. O desempenho passado da simulação não prevê resultados futuros.
+AI Trading Bot 60s · versão experimental
